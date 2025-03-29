@@ -1,39 +1,25 @@
----
-layout: default
-title: "TNM's C++ Knowledge Base"
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TNM's C++ Library</title>
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  </head>
+  <body>
+    <div id="app"></div>
 
-<h1 class="title">TNM's C++ Library</h1>
-
-<div class="field">
-  <div class="control">
-    <input id="search" class="input" type="text" placeholder="Search notes...">
-  </div>
-</div>
-
-<div id="notes">
-  {% for note in site.cpp %}
-    <div class="box note" data-title="{{ note.title | downcase }}" data-content="{{ note.content | strip_html | downcase }}">
-      <h2 class="subtitle">
-        <a href="{{ note.url }}">{{ note.title }}</a>
-      </h2>
-      {{ note.content | markdownify }}
-    </div>
-  {% endfor %}
-</div>
-
-<script>
-  document.getElementById('search').addEventListener('input', function() {
-    var query = this.value.toLowerCase();
-    var notes = document.querySelectorAll('.note');
-    notes.forEach(function(note) {
-      var title = note.getAttribute('data-title');
-      var content = note.getAttribute('data-content');
-      if (title.indexOf(query) > -1 || content.indexOf(query) > -1) {
-        note.style.display = '';
-      } else {
-        note.style.display = 'none';
+    <script>
+      window.$docsify = {
+        name: "TNM's C++ Library",
+        repo: '',
+        loadSidebar: true,
+        auto2top: true,
+        search: 'auto'
       }
-    });
-  });
-</script>
+    </script>
+
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  </body>
+</html>

@@ -1,8 +1,3 @@
----
-title: "Main function"
-layout: default
----
-
 **Every line of code that runs must be inside the `main` function. The `main` function is the entry point of a C++ program. When you run a C++ program, the code inside the `main` function is the first to be executed.**
 
 Here's a simple breakdown of a basic C++ program:

@@ -1,8 +1,3 @@
----
-title: "Variables"
-layout: default
----
-
 **Variables** are containers that hold data values. They are used to store, manipulate, and display information within a program.
 
 In short, a variable is like a memory unit that we can access by typing the name of the variable. 

@@ -1,8 +1,3 @@
----
-title: "Real numbers"
-layout: default
----
-
 In C++, **real numbers** are typically represented using two main data types: `float` and `double`.
 
 `float` is used to store numbers with a decimal point. For example:

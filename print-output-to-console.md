@@ -1,8 +1,3 @@
----
-title: "Print output to console"
-layout: default
----
-
 Syntax:```
 ```cpp
 std::cout

@@ -1,8 +1,3 @@
----
-title: "String"
-layout: default
----
-
 A **char** is a single character (For example: 1, 6, %, b, p, ., T, etc.)
 
 The string type in C++ is a sequence of characters that can hold multiple chars.
